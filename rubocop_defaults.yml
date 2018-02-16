@@ -46,3 +46,12 @@ RSpec/MultipleExpectations:
     - spec/**/*
 RSpec/ExampleLength:
   Max: 15
+  Exclude:
+    - spec/features/**/*_spec.rb
+RSpec/ScatteredSetup:
+  Enabled: false
+RSpec/ReturnFromStub:
+  EnforcedStyle: block
+Style/BlockDelimiters:
+  Exclude:
+    - spec/**/*_spec.rb
