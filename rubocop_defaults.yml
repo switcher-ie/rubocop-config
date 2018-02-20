@@ -7,7 +7,7 @@ AllCops:
 Rails/OutputSafety:
   Exclude:
     - 'app/helpers/*.rb'
-Naming/FileName:
+Style/FileName:
   Exclude:
     - Guardfile
     - Gemfile
