@@ -46,3 +46,8 @@ RSpec/MultipleExpectations:
     - spec/**/*
 RSpec/ExampleLength:
   Max: 15
+  Exclude:
+    - spec/features/**/*_spec.rb
+Style/BlockDelimiters:
+  Exclude:
+    - spec/**/*_spec.rb
