@@ -38,6 +38,7 @@ Metrics/BlockLength:
     - config/initializers/*.rb
     - config/environments/*.rb
     - spec/**/*
+    - db/anonymize.rb
 RSpec/AnyInstance:
   Exclude:
     - spec/**/*
