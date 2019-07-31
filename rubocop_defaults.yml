@@ -1,54 +1,63 @@
-require: rubocop-rspec
+require:
+  - rubocop-rspec
+  - rubocop-rails
+
 AllCops:
   Exclude:
     - db/schema.rb
     - Guardfile
-    - node_modules/**/*
-Rails/OutputSafety:
-  Exclude:
-    - 'app/helpers/*.rb'
-Style/FileName:
+    - "bin/*"
+
+Naming/FileName:
   Exclude:
     - Guardfile
     - Gemfile
+Naming/UncommunicativeMethodParamName:
+  Enabled: false
+
 Style/Documentation:
   Enabled: false
-Metrics/LineLength:
-  Enabled: false
-Rails/HasAndBelongsToMany:
-  Enabled: false
-Metrics/ClassLength:
-  Max: 200
-  Exclude:
-    - db/migrate/*.rb
-Metrics/AbcSize:
-  Max: 18
-  Exclude:
-    - db/migrate/*.rb
-Metrics/MethodLength:
-  Max: 25
-  Exclude:
-    - db/migrate/*.rb
-Rails/SkipsModelValidations:
-  Exclude:
-    - db/migrate/*.rb
-Metrics/BlockLength:
-  Exclude:
-    - lib/tasks/*.rake
-    - config/initializers/*.rb
-    - config/environments/*.rb
-    - spec/**/*
-    - db/anonymize.rb
-RSpec/AnyInstance:
-  Exclude:
-    - spec/**/*
-RSpec/MultipleExpectations:
-  Exclude:
-    - spec/**/*
-RSpec/ExampleLength:
-  Max: 15
-  Exclude:
-    - spec/features/**/*_spec.rb
 Style/BlockDelimiters:
   Exclude:
     - spec/**/*_spec.rb
+Style/AccessModifierDeclarations:
+  Enabled: false
+
+Metrics/LineLength:
+  Enabled: false
+Metrics/ClassLength:
+  Enabled: false
+Metrics/AbcSize:
+  Enabled: false
+Metrics/ModuleLength:
+  Enabled: false
+Metrics/MethodLength:
+  Max: 50
+  Exclude:
+    - db/migrate/*.rb
+Metrics/BlockLength:
+  Enabled: false
+Metrics/CyclomaticComplexity:
+  Enabled: false
+
+Rails/HasAndBelongsToMany:
+  Enabled: false
+Rails/SkipsModelValidations:
+  Exclude:
+    - db/migrate/*.rb
+Rails/OutputSafety:
+  Exclude:
+    - 'app/helpers/*.rb'
+Rails/BulkChangeTable:
+  Enabled: false
+Rails/InverseOf:
+ Enabled: false
+
+RSpec/AnyInstance:
+  Enabled: false
+RSpec/MultipleExpectations:
+  Enabled: false
+RSpec/ExampleLength:
+  Enabled: false
+RSpec/NamedSubject:
+  Enabled: false
