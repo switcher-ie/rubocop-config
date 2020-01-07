@@ -23,7 +23,7 @@ Style/BlockDelimiters:
 Style/AccessModifierDeclarations:
   Enabled: false
 
-Metrics/LineLength:
+Layout/LineLength:
   Enabled: false
 Metrics/ClassLength:
   Enabled: false
