@@ -12,7 +12,7 @@ Naming/FileName:
   Exclude:
     - Guardfile
     - Gemfile
-Naming/UncommunicativeMethodParamName:
+Naming/MethodParameterName:
   Enabled: false
 
 Style/Documentation:
