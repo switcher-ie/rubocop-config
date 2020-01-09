@@ -12,7 +12,7 @@ Naming/FileName:
   Exclude:
     - Guardfile
     - Gemfile
-Naming/UncommunicativeMethodParamName:
+Naming/MethodParameterName:
   Enabled: false
 
 Style/Documentation:
@@ -23,7 +23,7 @@ Style/BlockDelimiters:
 Style/AccessModifierDeclarations:
   Enabled: false
 
-Metrics/LineLength:
+Layout/LineLength:
   Enabled: false
 Metrics/ClassLength:
   Enabled: false
